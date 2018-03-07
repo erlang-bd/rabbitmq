@@ -9,7 +9,7 @@ rabbitmq-plugins enable rabbitmq_management
 
 * Add a new/fresh user, say user ` admin ` and password ` admin `
 ```sh
-rabbitmqctl add_user test test
+rabbitmqctl add_user admin admin
 ```
 * Give administrative access to the ` admin ` user
 ```sh
