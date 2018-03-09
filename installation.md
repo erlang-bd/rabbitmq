@@ -1,6 +1,22 @@
 ## Install RabbitMQ testing package
 * [debian-install](https://www.rabbitmq.com/install-debian.html)
 * [rabbitmq-server-github](https://github.com/rabbitmq/rabbitmq-server/issues/515)
+```sh
+Install Erlang
+cd /tmp/
+wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+sudo dpkg -i erlang-solutions_1.0_all.deb
+sudo apt-get update -y
+sudo apt-get install erlang -y
+
+Install RabbitMQ from source
+cd /tmp/
+echo 'echo "deb http://www.rabbitmq.com/debian/ testing main" >> /etc/apt/sources.list' | sudo -s
+wget https://www.rabbitmq.com/rabbitmq-signing-key-public.asc
+sudo apt-key add rabbitmq-signing-key-public.asc
+sudo apt-get update -y
+sudo apt-get install rabbitmq-server -y
+```
 
 ## Enable management plugin
 
