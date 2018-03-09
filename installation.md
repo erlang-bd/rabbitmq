@@ -1,3 +1,7 @@
+## Install RabbitMQ testing package
+* [debian-install](https://www.rabbitmq.com/install-debian.html)
+* [rabbitmq-server-github](https://github.com/rabbitmq/rabbitmq-server/issues/515)
+
 ## Enable management plugin
 
 ```sh
